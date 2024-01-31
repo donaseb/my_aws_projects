@@ -1,1 +1,1 @@
-This Project is about S3 Bucket creation.
+This project shows how to implement cicd pipeline using aws managed services like code build ,code pipeline,code commit,code deploy
