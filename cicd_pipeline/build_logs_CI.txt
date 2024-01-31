@@ -1,0 +1,1010 @@
+[Container] 2024/01/31 18:05:32.907462 Waiting for agent ping
+
+
+
+[Container] 2024/01/31 18:05:33.108798 Waiting for DOWNLOAD_SOURCE
+
+
+
+[Container] 2024/01/31 18:05:36.454367 Phase is DOWNLOAD_SOURCE
+
+
+
+[Container] 2024/01/31 18:05:36.455866 CODEBUILD_SRC_DIR=/codebuild/output/src4213584396/src/github.com/***/my_aws_projects
+
+
+
+[Container] 2024/01/31 18:05:36.456283 YAML location is /codebuild/readonly/buildspec.yml
+
+
+
+[Container] 2024/01/31 18:05:36.456574 No commands found for phase name: install
+
+
+
+[Container] 2024/01/31 18:05:36.458033 Setting HTTP client timeout to higher timeout for Github and GitHub Enterprise sources
+
+
+
+[Container] 2024/01/31 18:05:36.458179 Processing environment variables
+
+
+
+[Container] 2024/01/31 18:05:36.526915 Decrypting parameter store environment variables
+
+
+
+[Container] 2024/01/31 18:05:36.884707 Selecting 'python' runtime version '3.11' based on manual selections...
+
+
+
+[Container] 2024/01/31 18:05:36.884855 Running command echo "Installing Python version 3.11 ..."
+
+
+
+Installing Python version 3.11 ...
+
+
+
+
+
+
+
+[Container] 2024/01/31 18:05:36.956052 Running command pyenv global  $PYTHON_311_VERSION
+
+
+
+
+
+
+
+[Container] 2024/01/31 18:05:38.150316 Moving to directory /codebuild/output/src4213584396/src/github.com/***/my_aws_projects
+
+
+
+[Container] 2024/01/31 18:05:38.153457 Unable to initialize cache download: no paths specified to be cached
+
+
+
+[Container] 2024/01/31 18:05:38.275149 Configuring ssm agent with target id: codebuild:fd9cad03-fc0a-42e5-885c-e62ee4485b04
+
+
+
+[Container] 2024/01/31 18:05:38.311749 Successfully updated ssm agent configuration
+
+
+
+[Container] 2024/01/31 18:05:38.312108 Registering with agent
+
+
+
+[Container] 2024/01/31 18:05:38.312124 Phases found in YAML: 4
+
+
+
+[Container] 2024/01/31 18:05:38.312212  BUILD: 6 commands
+
+
+
+[Container] 2024/01/31 18:05:38.312217  POST_BUILD: 1 commands
+
+
+
+[Container] 2024/01/31 18:05:38.312221  INSTALL: 0 commands
+
+
+
+[Container] 2024/01/31 18:05:38.312224  PRE_BUILD: 1 commands
+
+
+
+[Container] 2024/01/31 18:05:38.312526 Phase complete: DOWNLOAD_SOURCE State: SUCCEEDED
+
+
+
+[Container] 2024/01/31 18:05:38.312540 Phase context status code:  Message: 
+
+
+
+[Container] 2024/01/31 18:05:38.387255 Entering phase INSTALL
+
+
+
+[Container] 2024/01/31 18:05:38.389333 Phase complete: INSTALL State: SUCCEEDED
+
+
+
+[Container] 2024/01/31 18:05:38.389347 Phase context status code:  Message: 
+
+
+
+[Container] 2024/01/31 18:05:38.424222 Entering phase PRE_BUILD
+
+
+
+[Container] 2024/01/31 18:05:38.424712 Running command pip install -r cicd_pipeline/simple-python-app/requirements.txt
+
+
+
+Collecting flask (from -r cicd_pipeline/simple-python-app/requirements.txt (line 1))
+
+
+
+  Downloading flask-3.0.1-py3-none-any.whl.metadata (3.6 kB)
+
+
+
+Collecting Werkzeug>=3.0.0 (from flask->-r cicd_pipeline/simple-python-app/requirements.txt (line 1))
+
+
+
+  Downloading werkzeug-3.0.1-py3-none-any.whl.metadata (4.1 kB)
+
+
+
+Collecting Jinja2>=3.1.2 (from flask->-r cicd_pipeline/simple-python-app/requirements.txt (line 1))
+
+
+
+  Downloading Jinja2-3.1.3-py3-none-any.whl.metadata (3.3 kB)
+
+
+
+Collecting itsdangerous>=2.1.2 (from flask->-r cicd_pipeline/simple-python-app/requirements.txt (line 1))
+
+
+
+  Downloading itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+
+
+
+Collecting click>=8.1.3 (from flask->-r cicd_pipeline/simple-python-app/requirements.txt (line 1))
+
+
+
+  Downloading click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+
+
+
+Collecting blinker>=1.6.2 (from flask->-r cicd_pipeline/simple-python-app/requirements.txt (line 1))
+
+
+
+  Downloading blinker-1.7.0-py3-none-any.whl.metadata (1.9 kB)
+
+
+
+Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->flask->-r cicd_pipeline/simple-python-app/requirements.txt (line 1))
+
+
+
+  Downloading MarkupSafe-2.1.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.0 kB)
+
+
+
+Downloading flask-3.0.1-py3-none-any.whl (101 kB)
+
+
+
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 101.2/101.2 kB 5.9 MB/s eta 0:00:00
+
+
+
+Downloading blinker-1.7.0-py3-none-any.whl (13 kB)
+
+
+
+Downloading click-8.1.7-py3-none-any.whl (97 kB)
+
+
+
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 kB 12.5 MB/s eta 0:00:00
+
+
+
+Downloading Jinja2-3.1.3-py3-none-any.whl (133 kB)
+
+
+
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.2/133.2 kB 16.6 MB/s eta 0:00:00
+
+
+
+Downloading werkzeug-3.0.1-py3-none-any.whl (226 kB)
+
+
+
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.7/226.7 kB 28.7 MB/s eta 0:00:00
+
+
+
+Downloading MarkupSafe-2.1.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (28 kB)
+
+
+
+Installing collected packages: MarkupSafe, itsdangerous, click, blinker, Werkzeug, Jinja2, flask
+
+
+
+Successfully installed Jinja2-3.1.3 MarkupSafe-2.1.4 Werkzeug-3.0.1 blinker-1.7.0 click-8.1.7 flask-3.0.1 itsdangerous-2.1.2
+
+
+
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+
+
+
+
+
+
+[notice] A new release of pip is available: 23.3.1 -> 23.3.2
+
+
+
+[notice] To update, run: pip install --upgrade pip
+
+
+
+
+
+
+
+[Container] 2024/01/31 18:06:02.655065 Phase complete: PRE_BUILD State: SUCCEEDED
+
+
+
+[Container] 2024/01/31 18:06:02.655085 Phase context status code:  Message: 
+
+
+
+[Container] 2024/01/31 18:06:02.701712 Entering phase BUILD
+
+
+
+[Container] 2024/01/31 18:06:02.702127 Running command echo "Running tests..."
+
+
+
+Running tests...
+
+
+
+
+
+
+
+[Container] 2024/01/31 18:06:02.707863 Running command cd cicd_pipeline/simple-python-app
+
+
+
+
+
+
+
+[Container] 2024/01/31 18:06:02.712656 Running command echo "Building Docker Image"
+
+
+
+Building Docker Image
+
+
+
+
+
+
+
+[Container] 2024/01/31 18:06:02.717296 Running command echo "$DOCKER_REGISTRY_PASSWORD" | docker login -u "$DOCKER_REGISTRY_USERNAME" --password-stdin "$DOCKER_REGISTRY_URL"
+
+
+
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+
+
+
+Configure a credential helper to remove this warning. See
+
+
+
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+
+
+
+
+
+
+Login Succeeded
+
+
+
+
+
+
+
+[Container] 2024/01/31 18:06:02.837580 Running command docker build -t "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/simple-python-app:latest" .
+
+
+
+#0 building with "default" instance using docker driver
+
+
+
+
+
+
+
+#1 [internal] load .dockerignore
+
+
+
+#1 transferring context: 2B done
+
+
+
+#1 DONE 0.0s
+
+
+
+
+
+
+
+#2 [internal] load build definition from Dockerfile
+
+
+
+#2 transferring dockerfile: 508B done
+
+
+
+#2 DONE 0.0s
+
+
+
+
+
+
+
+#3 [auth] library/python:pull token for registry-1.***
+
+
+
+#3 DONE 0.0s
+
+
+
+
+
+
+
+#4 [internal] load metadata for ***/library/python:3.8
+
+
+
+#4 DONE 0.5s
+
+
+
+
+
+
+
+#5 [internal] load build context
+
+
+
+#5 transferring context: 2.35kB done
+
+
+
+#5 DONE 0.0s
+
+
+
+
+
+
+
+#6 [1/5] FROM ***/library/python:3.8@sha256:22b8bf2be7a50eeb14b01322e580485681017032a720604baab1643a90a6b794
+
+
+
+#6 resolve ***/library/python:3.8@sha256:22b8bf2be7a50eeb14b01322e580485681017032a720604baab1643a90a6b794 0.0s done
+
+
+
+#6 sha256:8a90415600108404fbe6f011c525e78dc2709d54c973738b1b960f69f361aef4 7.38kB / 7.38kB done
+
+
+
+#6 sha256:1b13d4e1a46e5e969702ec92b7c787c1b6891bff7c21ad378ff6dbc9e751d5d4 0B / 49.56MB 0.1s
+
+
+
+#6 sha256:22b8bf2be7a50eeb14b01322e580485681017032a720604baab1643a90a6b794 1.86kB / 1.86kB done
+
+
+
+#6 sha256:fb36df8267c3a647ab9a1af81d1696d3274c0c41c804af0d110b80b79fe4c270 2.01kB / 2.01kB done
+
+
+
+#6 sha256:1b13d4e1a46e5e969702ec92b7c787c1b6891bff7c21ad378ff6dbc9e751d5d4 3.15MB / 49.56MB 0.2s
+
+
+
+#6 sha256:1c74526957fc2157e8b0989072dc99b9582b398c12d1dcd40270fd76231bab0c 0B / 24.05MB 0.2s
+
+
+
+#6 sha256:30d85599795460b2d9d24c6b87c53ec60555b601705cc83bea31632240500980 6.29MB / 64.14MB 0.2s
+
+
+
+#6 sha256:1b13d4e1a46e5e969702ec92b7c787c1b6891bff7c21ad378ff6dbc9e751d5d4 14.68MB / 49.56MB 0.3s
+
+
+
+#6 sha256:1c74526957fc2157e8b0989072dc99b9582b398c12d1dcd40270fd76231bab0c 5.24MB / 24.05MB 0.3s
+
+
+
+#6 sha256:30d85599795460b2d9d24c6b87c53ec60555b601705cc83bea31632240500980 14.68MB / 64.14MB 0.3s
+
+
+
+#6 sha256:1b13d4e1a46e5e969702ec92b7c787c1b6891bff7c21ad378ff6dbc9e751d5d4 28.31MB / 49.56MB 0.4s
+
+
+
+#6 sha256:1c74526957fc2157e8b0989072dc99b9582b398c12d1dcd40270fd76231bab0c 10.49MB / 24.05MB 0.4s
+
+
+
+#6 sha256:1b13d4e1a46e5e969702ec92b7c787c1b6891bff7c21ad378ff6dbc9e751d5d4 36.70MB / 49.56MB 0.5s
+
+
+
+#6 sha256:1c74526957fc2157e8b0989072dc99b9582b398c12d1dcd40270fd76231bab0c 16.78MB / 24.05MB 0.5s
+
+
+
+#6 sha256:30d85599795460b2d9d24c6b87c53ec60555b601705cc83bea31632240500980 25.17MB / 64.14MB 0.5s
+
+
+
+#6 sha256:1b13d4e1a46e5e969702ec92b7c787c1b6891bff7c21ad378ff6dbc9e751d5d4 49.56MB / 49.56MB 0.7s
+
+
+
+#6 sha256:1c74526957fc2157e8b0989072dc99b9582b398c12d1dcd40270fd76231bab0c 24.05MB / 24.05MB 0.6s done
+
+
+
+#6 sha256:30d85599795460b2d9d24c6b87c53ec60555b601705cc83bea31632240500980 50.33MB / 64.14MB 0.7s
+
+
+
+#6 sha256:ad5739181616b815fae7edc6bba689496674acbcf44e48a57fc7cc13a379b3a2 0B / 211.10MB 0.7s
+
+
+
+#6 sha256:1b13d4e1a46e5e969702ec92b7c787c1b6891bff7c21ad378ff6dbc9e751d5d4 49.56MB / 49.56MB 0.7s done
+
+
+
+#6 sha256:30d85599795460b2d9d24c6b87c53ec60555b601705cc83bea31632240500980 64.14MB / 64.14MB 0.9s
+
+
+
+#6 sha256:ad5739181616b815fae7edc6bba689496674acbcf44e48a57fc7cc13a379b3a2 23.07MB / 211.10MB 0.9s
+
+
+
+#6 sha256:75e2b45cbee50cea4b3ed4f4fe167ad5994622d77a54adde89adcfeefa3c229a 6.39MB / 6.39MB 0.9s
+
+
+
+#6 sha256:30d85599795460b2d9d24c6b87c53ec60555b601705cc83bea31632240500980 64.14MB / 64.14MB 0.9s done
+
+
+
+#6 extracting sha256:1b13d4e1a46e5e969702ec92b7c787c1b6891bff7c21ad378ff6dbc9e751d5d4 0.1s
+
+
+
+#6 sha256:ad5739181616b815fae7edc6bba689496674acbcf44e48a57fc7cc13a379b3a2 44.04MB / 211.10MB 1.1s
+
+
+
+#6 sha256:75e2b45cbee50cea4b3ed4f4fe167ad5994622d77a54adde89adcfeefa3c229a 6.39MB / 6.39MB 1.1s done
+
+
+
+#6 sha256:f4cb18646a15052fbff9e6a7f2af27b73ce3033e9e973709fedf06058817f092 0B / 246B 1.1s
+
+
+
+#6 sha256:76c111f84668456d1a37f894e2a1a6fc655cecf002d8b3f7934f4ffc14231f72 0B / 17.28MB 1.1s
+
+
+
+#6 sha256:f4cb18646a15052fbff9e6a7f2af27b73ce3033e9e973709fedf06058817f092 246B / 246B 1.1s done
+
+
+
+#6 sha256:76c111f84668456d1a37f894e2a1a6fc655cecf002d8b3f7934f4ffc14231f72 6.68MB / 17.28MB 1.2s
+
+
+
+#6 sha256:0a329b671abfc277cf19a2670d019384c564e146c9c5ed1bb97d173377497d6e 1.05MB / 2.85MB 1.2s
+
+
+
+#6 sha256:ad5739181616b815fae7edc6bba689496674acbcf44e48a57fc7cc13a379b3a2 73.40MB / 211.10MB 1.4s
+
+
+
+#6 sha256:76c111f84668456d1a37f894e2a1a6fc655cecf002d8b3f7934f4ffc14231f72 17.28MB / 17.28MB 1.3s done
+
+
+
+#6 sha256:0a329b671abfc277cf19a2670d019384c564e146c9c5ed1bb97d173377497d6e 2.85MB / 2.85MB 1.3s done
+
+
+
+#6 sha256:ad5739181616b815fae7edc6bba689496674acbcf44e48a57fc7cc13a379b3a2 93.32MB / 211.10MB 1.6s
+
+
+
+#6 sha256:ad5739181616b815fae7edc6bba689496674acbcf44e48a57fc7cc13a379b3a2 114.29MB / 211.10MB 1.8s
+
+
+
+#6 sha256:ad5739181616b815fae7edc6bba689496674acbcf44e48a57fc7cc13a379b3a2 143.65MB / 211.10MB 2.1s
+
+
+
+#6 sha256:ad5739181616b815fae7edc6bba689496674acbcf44e48a57fc7cc13a379b3a2 163.58MB / 211.10MB 2.3s
+
+
+
+#6 sha256:ad5739181616b815fae7edc6bba689496674acbcf44e48a57fc7cc13a379b3a2 193.99MB / 211.10MB 2.6s
+
+
+
+#6 sha256:ad5739181616b815fae7edc6bba689496674acbcf44e48a57fc7cc13a379b3a2 211.10MB / 211.10MB 2.8s
+
+
+
+#6 sha256:ad5739181616b815fae7edc6bba689496674acbcf44e48a57fc7cc13a379b3a2 211.10MB / 211.10MB 3.3s done
+
+
+
+#6 extracting sha256:1b13d4e1a46e5e969702ec92b7c787c1b6891bff7c21ad378ff6dbc9e751d5d4 2.5s done
+
+
+
+#6 extracting sha256:1c74526957fc2157e8b0989072dc99b9582b398c12d1dcd40270fd76231bab0c
+
+
+
+#6 extracting sha256:1c74526957fc2157e8b0989072dc99b9582b398c12d1dcd40270fd76231bab0c 0.6s done
+
+
+
+#6 extracting sha256:30d85599795460b2d9d24c6b87c53ec60555b601705cc83bea31632240500980
+
+
+
+#6 extracting sha256:30d85599795460b2d9d24c6b87c53ec60555b601705cc83bea31632240500980 2.4s done
+
+
+
+#6 extracting sha256:ad5739181616b815fae7edc6bba689496674acbcf44e48a57fc7cc13a379b3a2
+
+
+
+#6 extracting sha256:ad5739181616b815fae7edc6bba689496674acbcf44e48a57fc7cc13a379b3a2 5.0s
+
+
+
+#6 extracting sha256:ad5739181616b815fae7edc6bba689496674acbcf44e48a57fc7cc13a379b3a2 7.3s done
+
+
+
+#6 extracting sha256:75e2b45cbee50cea4b3ed4f4fe167ad5994622d77a54adde89adcfeefa3c229a
+
+
+
+#6 extracting sha256:75e2b45cbee50cea4b3ed4f4fe167ad5994622d77a54adde89adcfeefa3c229a 0.3s done
+
+
+
+#6 extracting sha256:76c111f84668456d1a37f894e2a1a6fc655cecf002d8b3f7934f4ffc14231f72
+
+
+
+#6 extracting sha256:76c111f84668456d1a37f894e2a1a6fc655cecf002d8b3f7934f4ffc14231f72 0.5s done
+
+
+
+#6 extracting sha256:f4cb18646a15052fbff9e6a7f2af27b73ce3033e9e973709fedf06058817f092 done
+
+
+
+#6 extracting sha256:0a329b671abfc277cf19a2670d019384c564e146c9c5ed1bb97d173377497d6e
+
+
+
+#6 extracting sha256:0a329b671abfc277cf19a2670d019384c564e146c9c5ed1bb97d173377497d6e 0.2s done
+
+
+
+#6 DONE 16.0s
+
+
+
+
+
+
+
+#7 [2/5] WORKDIR /app
+
+
+
+#7 DONE 1.3s
+
+
+
+
+
+
+
+#8 [3/5] COPY requirements.txt .
+
+
+
+#8 DONE 0.1s
+
+
+
+
+
+
+
+#9 [4/5] RUN pip install -r requirements.txt
+
+
+
+#9 1.649 Collecting flask
+
+
+
+#9 1.687   Downloading flask-3.0.1-py3-none-any.whl (101 kB)
+
+
+
+#9 1.705      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 101.2/101.2 kB 6.4 MB/s eta 0:00:00
+
+
+
+#9 1.734 Collecting blinker>=1.6.2
+
+
+
+#9 1.740   Downloading blinker-1.7.0-py3-none-any.whl (13 kB)
+
+
+
+#9 1.761 Collecting itsdangerous>=2.1.2
+
+
+
+#9 1.765   Downloading itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+
+
+
+#9 1.796 Collecting Jinja2>=3.1.2
+
+
+
+#9 1.800   Downloading Jinja2-3.1.3-py3-none-any.whl (133 kB)
+
+
+
+#9 1.807      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.2/133.2 kB 30.1 MB/s eta 0:00:00
+
+
+
+#9 1.839 Collecting click>=8.1.3
+
+
+
+#9 1.843   Downloading click-8.1.7-py3-none-any.whl (97 kB)
+
+
+
+#9 1.849      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 kB 26.2 MB/s eta 0:00:00
+
+
+
+#9 1.928 Collecting importlib-metadata>=3.6.0
+
+
+
+#9 1.935   Downloading importlib_metadata-7.0.1-py3-none-any.whl (23 kB)
+
+
+
+#9 1.981 Collecting Werkzeug>=3.0.0
+
+
+
+#9 1.991   Downloading werkzeug-3.0.1-py3-none-any.whl (226 kB)
+
+
+
+#9 1.998      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.7/226.7 kB 47.3 MB/s eta 0:00:00
+
+
+
+#9 2.062 Collecting zipp>=0.5
+
+
+
+#9 2.066   Downloading zipp-3.17.0-py3-none-any.whl (7.4 kB)
+
+
+
+#9 2.196 Collecting MarkupSafe>=2.0
+
+
+
+#9 2.201   Downloading MarkupSafe-2.1.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (26 kB)
+
+
+
+#9 2.299 Installing collected packages: zipp, MarkupSafe, itsdangerous, click, blinker, Werkzeug, Jinja2, importlib-metadata, flask
+
+
+
+#9 2.642 Successfully installed Jinja2-3.1.3 MarkupSafe-2.1.4 Werkzeug-3.0.1 blinker-1.7.0 click-8.1.7 flask-3.0.1 importlib-metadata-7.0.1 itsdangerous-2.1.2 zipp-3.17.0
+
+
+
+#9 2.643 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+
+
+
+#9 2.748 
+
+
+
+#9 2.748 [notice] A new release of pip is available: 23.0.1 -> 23.3.2
+
+
+
+#9 2.748 [notice] To update, run: pip install --upgrade pip
+
+
+
+#9 DONE 3.0s
+
+
+
+
+
+
+
+#10 [5/5] COPY . .
+
+
+
+#10 DONE 0.1s
+
+
+
+
+
+
+
+#11 exporting to image
+
+
+
+#11 exporting layers 0.1s done
+
+
+
+#11 writing image sha256:df7c975f2b1cadf5a59e84f7c768c1a5d94252a2567372ba4aa709a0ca63d38e done
+
+
+
+#11 naming to ***/***/simple-python-app:latest done
+
+
+
+#11 DONE 0.1s
+
+
+
+
+
+
+
+[Container] 2024/01/31 18:06:24.243740 Running command docker push "$DOCKER_REGISTRY_URL/$DOCKER_REGISTRY_USERNAME/simple-python-app:latest"
+
+
+
+The push refers to repository [***/***/simple-python-app]
+
+
+
+bb365dbf687a: Preparing
+
+
+
+5afabecedc24: Preparing
+
+
+
+4537ed2bed98: Preparing
+
+
+
+0a8ee288b683: Preparing
+
+
+
+52872001ed86: Preparing
+
+
+
+be334ce242ed: Preparing
+
+
+
+5a89aa9cf506: Preparing
+
+
+
+f757a77eef71: Preparing
+
+
+
+a876dfc51caa: Preparing
+
+
+
+5bb1de08f5af: Preparing
+
+
+
+0dfa23fffa41: Preparing
+
+
+
+aa904f36746c: Preparing
+
+
+
+be334ce242ed: Waiting
+
+
+
+5a89aa9cf506: Waiting
+
+
+
+f757a77eef71: Waiting
+
+
+
+a876dfc51caa: Waiting
+
+
+
+5bb1de08f5af: Waiting
+
+
+
+0dfa23fffa41: Waiting
+
+
+
+aa904f36746c: Waiting
+
+
+
+52872001ed86: Mounted from library/python
+
+
+
+be334ce242ed: Mounted from library/python
+
+
+
+5a89aa9cf506: Mounted from library/python
+
+
+
+f757a77eef71: Mounted from library/python
+
+
+
+4537ed2bed98: Pushed
+
+
+
+0a8ee288b683: Pushed
+
+
+
+a876dfc51caa: Mounted from library/python
+
+
+
+5bb1de08f5af: Mounted from library/python
+
+
+
+0dfa23fffa41: Mounted from library/python
+
+
+
+bb365dbf687a: Pushed
+
+
+
+5afabecedc24: Pushed
+
+
+
+aa904f36746c: Mounted from library/python
+
+
+
+latest: digest: sha256:49edf9469ac4bcfbd93a3c1a252773bd401502d16923c511d68bffcdad98f71d size: 2840
+
+
+
+
+
+
+
+[Container] 2024/01/31 18:06:27.198360 Phase complete: BUILD State: SUCCEEDED
+
+
+
+[Container] 2024/01/31 18:06:27.198380 Phase context status code:  Message: 
+
+
+
+[Container] 2024/01/31 18:06:27.233492 Entering phase POST_BUILD
+
+
+
+[Container] 2024/01/31 18:06:27.234087 Running command echo "Build is successfull"
+
+
+
+Build is successfull
+
+
+
+
+
+
+
+[Container] 2024/01/31 18:06:27.239222 Phase complete: POST_BUILD State: SUCCEEDED
+
+
+
+[Container] 2024/01/31 18:06:27.239237 Phase context status code:  Message: 
+
+
+
+
+
