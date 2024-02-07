@@ -6,5 +6,3 @@ docker pull donaseb/simple-python-app:latest
 
 # Run the Docker image as a container
 docker run -d -p 5000:5000 donaseb/simple-python-app:latest
-
-
